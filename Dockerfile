@@ -4,7 +4,7 @@ MAINTAINER gijs@pythonic.nl
 RUN yum install -y libpng freetype libSM libXi libXrender libXrandr libXfixes \
     libXcursor fontconfig libxslt which auth xorg-x11-server-Xvfb libXinerama
 
-ENV VERSION=4.5.0
+ENV VERSION=4.4.0
 ENV RELEASE=casa-release-${VERSION}-el6
 ENV USER root
 

@@ -1,4 +1,4 @@
-DOCKER_REPO=radioastro/casa
+DOCKER_REPO=radioastro/casa:4.5
 
 
 .PHONY: build clean run upload download

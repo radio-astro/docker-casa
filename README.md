@@ -12,7 +12,3 @@ Note that you don't need this repository to use the casa docker image,
 you can just do `docker run -ti radioastro/casa` which will implicitly
 download the image from the docker hub.
 
-You can also 'attach' this container to other containers using
-`--volumes-from=`, which will result in a `casa` containing casa in
-your container.
-

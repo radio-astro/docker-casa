@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FILE=casa-release-4.4.0-el6.tar.gz
+FILE=casa-release-4.3.1-el6.tar.gz
 URL=https://svn.cv.nrao.edu/casa/linux_distro/release/el6/$FILE
 
 # make sure we are in the source folder

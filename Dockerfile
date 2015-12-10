@@ -9,7 +9,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # setup all required env variables
-ENV VERSION=4.4.0
+ENV VERSION=4.3.1
 ENV RELEASE=casa-release-${VERSION}-el6
 ENV USER root
 ENV HOME /root

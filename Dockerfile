@@ -9,8 +9,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # setup all required env variables
-ENV VERSION=4.3.1
-ENV RELEASE=casa-release-${VERSION}-el6
+ENV VERSION 4.2.2
+ENV RELEASE casapy-42.2.30986-1-64b
 ENV USER root
 ENV HOME /root
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/${RELEASE}/bin

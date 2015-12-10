@@ -1,8 +1,12 @@
-FROM centos:centos6
+from radioastro/base:0.1
 MAINTAINER gijs@pythonic.nl
 
-RUN yum install -y libpng freetype libSM libXi libXrender libXrandr libXfixes \
-    libXcursor fontconfig libxslt which auth xorg-x11-server-Xvfb libXinerama
+RUN apt-get update && \
+        apt-get update -y && \
+        apt-get install -y libfreetype6 libsm6 libxi6 libxrender1 libxrandr2 libxfixes3 \
+            libxcursor1 libxinerama1 libfontconfig1  libxslt1.1 xauth && \
+        apt-get clean && \
+        rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV VERSION=4.4.0
 ENV RELEASE=casa-release-${VERSION}-el6

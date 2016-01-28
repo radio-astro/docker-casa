@@ -22,6 +22,21 @@ RUN ln -s ${RELEASE} /casa
 # copy empty casas config
 ADD casa /root/.casa
 
+
+# Add these for Sphe. Ideally we should remove these at some point.
+RUN apt-get update && \
+    apt-get install -y \
+        time \
+        python-pyxis \
+        python-scipy \
+        python-astlib \
+        python-owlcat \
+        python-meqtrees-cattery \
+        python-kittens \
+        && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ 
+
 WORKDIR /${RELEASE}/bin
 CMD ["casa"]
 

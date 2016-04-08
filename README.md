@@ -1,4 +1,4 @@
-Docker files for casa 4.5
+Docker files for casa 4.6
 
 These files are used to create a casapy docker image.
 

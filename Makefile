@@ -1,4 +1,5 @@
-DOCKER_REPO=radioastro/casa:4.5.2
+VERSION=4.5.3
+DOCKER_REPO=radioastro/casa:$(VERSION)
 
 
 .PHONY: build clean run upload download
@@ -8,11 +9,11 @@ all: build run clean upload
 
 
 download:
-	./download.sh
+	./download.sh $(VERSION)
 
 
 build: download
-	docker build -t ${DOCKER_REPO} .
+	docker build --build-arg VERSION=$(VERSION) -t ${DOCKER_REPO} .
 
 
 clean:

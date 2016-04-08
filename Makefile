@@ -5,7 +5,7 @@ DOCKER_REPO=radioastro/casa:$(VERSION)
 .PHONY: build clean run upload download
 
 
-all: build run clean upload
+all: build run upload
 
 
 download:

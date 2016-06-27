@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-FILE=casa-release-4.6.0-el6.tar.gz
+if [ $# -eq 0 ]
+then
+  echo "usage: $0 <version>"
+  exit 1
+fi
+
+VERSION=$1
+FILE=casa-release-${VERSION}-el6.tar.gz
 URL=https://svn.cv.nrao.edu/casa/linux_distro/release/el6/$FILE
 
 # make sure we are in the source folder

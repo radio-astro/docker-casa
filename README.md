@@ -1,4 +1,6 @@
-Docker files for casa 4.6
+#Docker files for casa 4.6
+
+**WARNING**: This project has been replaced by KERN and is unmaintained: http://kernsuite.info/
 
 These files are used to create a casapy docker image.
 
